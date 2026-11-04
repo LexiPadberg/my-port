@@ -205,3 +205,7 @@ instead of "thoughtful" software solutions, say impactful software soluttions
 ## 2026-11-04 13:13 EST
 
 move the picture of me at the top just a little bit up so i can see the pendant on my necklace. also put crusader before cummins in the card order
+
+## 2026-11-04 13:19 EST
+
+the pictures for crusdar and cummins are no longer rendering
