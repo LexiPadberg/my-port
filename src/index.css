@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /*
+   * Tone colors, as "R G B" values so Tailwind can add transparency (e.g. text-tone-body/80).
+   * Each tile sets data-background, and everything inside picks readable colors from it.
+   * Palette: ivory 245 242 236 · mist 220 228 232 · dusty 164 184 198 · steel 83 111 133 · navy 41 59 74
+   */
+  :root,
+  [data-background='ivory'] {
+    --tone-heading: 41 59 74;
+    --tone-body: 41 59 74;
+    --tone-accent: 83 111 133;
+    --tone-on-accent: 245 242 236;
+    --tone-button: 83 111 133;
+    --tone-on-button: 245 242 236;
+    --tone-button-hover: 41 59 74;
+  }
+
+  /* Steel-blue text is too faint on mist and dusty, so small accent text switches to navy. */
+  [data-background='mist'],
+  [data-background='dusty'] {
+    --tone-heading: 41 59 74;
+    --tone-body: 41 59 74;
+    --tone-accent: 41 59 74;
+    --tone-on-accent: 245 242 236;
+    --tone-button: 83 111 133;
+    --tone-on-button: 245 242 236;
+    --tone-button-hover: 41 59 74;
+  }
+
+  /* Dark feature tile: light text, ivory buttons. */
+  [data-background='navy'] {
+    --tone-heading: 245 242 236;
+    --tone-body: 245 242 236;
+    --tone-accent: 164 184 198;
+    --tone-on-accent: 41 59 74;
+    --tone-button: 245 242 236;
+    --tone-on-button: 41 59 74;
+    --tone-button-hover: 164 184 198;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Keeps section headings from hiding behind the sticky navigation bar. */
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-ivory font-body antialiased;
+    color: rgb(var(--tone-body));
+    /* Prevents sideways scrolling without breaking the sticky navigation bar. */
+    overflow-x: clip;
+  }
+
+  [data-background] {
+    color: rgb(var(--tone-body));
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+    color: rgb(var(--tone-heading));
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2;
+    outline-color: rgb(var(--tone-accent));
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}

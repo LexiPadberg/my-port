@@ -1,0 +1,15 @@
+{
+  "short_name": "Alexa Padberg",
+  "name": "Alexa Padberg | Software Engineer",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#F5F2EC",
+  "background_color": "#F5F2EC"
+}
