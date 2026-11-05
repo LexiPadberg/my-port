@@ -8,7 +8,7 @@ import SectionHeading from '../ui/SectionHeading';
 function EducationStat({ value, label }) {
   return (
     // Label comes first in the HTML (as required), but is shown under the value.
-    <div className="flex flex-col-reverse rounded-2xl bg-ivory/70 px-4 py-3">
+    <div className="flex flex-col-reverse rounded-2xl border-l-4 border-coral bg-ivory/70 px-4 py-3">
       <dt className="mt-0.5 text-xs font-bold uppercase tracking-[0.15em] text-navy">{label}</dt>
       <dd className="font-heading text-2xl font-semibold text-navy sm:text-3xl">{value}</dd>
     </div>
@@ -34,7 +34,8 @@ function EducationSection({ background = 'mist', className = '', revealDelayMs =
             <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
               <h3 className="text-xl font-semibold leading-snug sm:text-2xl">{school.school}</h3>
               {school.isInProgress && (
-                <span className="rounded-full bg-navy px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-ivory">
+                <span className="inline-flex items-center gap-2 rounded-full bg-navy px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-ivory">
+                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-coral" />
                   In progress
                 </span>
               )}

@@ -30,12 +30,12 @@ function HeroSection({ className = '', photoClassName = '', aboutClassName = '' 
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-28 left-1/4 h-64 w-64 rounded-full bg-mist blur-3xl"
+          className="pointer-events-none absolute -bottom-28 left-1/4 h-64 w-64 rounded-full bg-coral/25 blur-3xl"
         />
 
         <div className="relative">
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-dusty/70 bg-ivory/70 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-tone-accent">
-            <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-steel" />
+            <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-coral" />
             {profileData.headline}
           </p>
 

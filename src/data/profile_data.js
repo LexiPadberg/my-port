@@ -14,7 +14,9 @@ const profileData = {
   bio:
     'I graduated from the College of Charleston with a degree in Computer Science and have ' +
     'professional experience working on software applications, audio processing systems, and web ' +
-    'technologies. My experience spans Python, C#, JavaScript, React, Node.js, and application ' +
+    "technologies. Today, I'm a Computer Scientist II at Fathom 4, where I build software for the " +
+    'U.S. Marine Corps and have worked on military applications ranging from scripting tools to ' +
+    'geospatial analysis. My experience spans Python, C#, JavaScript, React, Node.js, and application ' +
     "development. I'm passionate about continuous learning and building technology that makes a " +
     'meaningful impact.',
   photoSrc: headshotPhoto,

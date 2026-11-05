@@ -209,3 +209,36 @@ move the picture of me at the top just a little bit up so i can see the pendant 
 ## 2026-11-04 13:19 EST
 
 the pictures for crusdar and cummins are no longer rendering
+
+## 2026-11-05 09:35 EST
+
+in my about me, add some stuff about my current job at fathom. add how I have worked on military applications from scripting tools to geospatial analysis
+
+## 2026-11-05 09:36 EST
+
+nothing happens when my email link is clicked
+
+## 2026-11-05 09:41 EST
+
+in the bottom bar, take out the mail button since it doesnt do anything
+
+## 2026-11-05 09:54 EST
+
+can you add a pop of color
+
+_Answers: accent color = Coral (#E07A5F); amount = accent touches._
+
+## 2026-11-05 09:58 EST
+
+add some backshadow even when the cards arent hovered over
+
+## 2026-11-05 09:59 EST
+
+i also want a hit count to see how many people view the page
+
+_Answer: hit counter = Only me (private GoatCounter dashboard)._
+
+## 2026-11-05 10:03 EST
+
+<script data-goatcounter="https://alexapadberg.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>

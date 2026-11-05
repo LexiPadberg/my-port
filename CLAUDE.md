@@ -28,6 +28,7 @@
     - Dusty Blue: #A4B8C6 decorative elements/highlights
     - Steel Blue: #536F85 buttons and links
     - Deep Navy: #293B4A headings and contrast elements
+    - Coral: #E07A5F accent "pop", used sparingly for dots, lines, bars, borders, and glows (never for text: too light to read)
 - Prevent horizontal scrolling and overlapping content.
 - Use dynamic layout sizing rather than fixed-widths.
 - Must work on desktop, tablet, and mobile devices

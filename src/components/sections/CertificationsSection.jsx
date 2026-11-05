@@ -18,7 +18,7 @@ function CertificationsSection({ background = 'dusty', className = '', revealDel
 
       {securityClearance && (
         <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-navy px-4 py-1.5 text-sm font-semibold text-ivory">
-          <span aria-hidden="true" className="h-2 w-2 rounded-full bg-dusty" />
+          <span aria-hidden="true" className="h-2 w-2 rounded-full bg-coral" />
           {securityClearance}
         </p>
       )}

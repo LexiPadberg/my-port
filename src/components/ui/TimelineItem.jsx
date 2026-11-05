@@ -29,7 +29,7 @@ function TimelineItem({
       <span
         aria-hidden="true"
         className={`absolute left-0 top-1.5 h-[11px] w-[11px] rounded-full border-2 ${
-          isCompact ? 'border-dusty bg-ivory' : 'border-steel bg-steel'
+          isCompact ? 'border-dusty bg-ivory' : 'border-coral bg-coral'
         }`}
       />
 
@@ -48,7 +48,7 @@ function TimelineItem({
       </div>
 
       {keyStat && (
-        <div className="mt-5 flex items-center gap-4 rounded-2xl bg-mist px-5 py-4">
+        <div className="mt-5 flex items-center gap-4 rounded-2xl border-l-4 border-coral bg-mist px-5 py-4">
           <span className="font-heading text-3xl font-semibold text-navy sm:text-4xl">
             {keyStat.value}
           </span>

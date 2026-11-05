@@ -18,7 +18,7 @@ function SectionHeading({ id, eyebrow, title, subtitle, align = 'left' }) {
       </h2>
       <span
         aria-hidden="true"
-        className={`mt-4 block h-1 w-12 rounded-full bg-tone-accent/50 ${isCentered ? 'mx-auto' : ''}`}
+        className={`mt-4 block h-1 w-12 rounded-full bg-coral ${isCentered ? 'mx-auto' : ''}`}
       />
       {subtitle && (
         <p

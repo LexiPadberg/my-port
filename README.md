@@ -59,6 +59,7 @@ src/
   index.js                 App entry point
   index.css                Global styles (Tailwind + base styles)
   data/                    ← Edit your content here (no code knowledge needed)
+    site_config.js         Settings such as the page view counter code
     navigation_data.js     Section IDs and nav link labels/order
     profile_data.js        Name, headline, tagline, value statement, bio, photo, résumé link
     experience_data.js     Jobs (plain-language paragraphs, highlighted stat, tech tags)
@@ -80,6 +81,8 @@ src/
       ShowcaseCard.jsx       Project/award card (screenshot, badge, tags, GitHub link)
       SkillLevelIndicator.jsx  3-segment bar + level word (Beginner/Intermediate/Advanced)
       icons/                 Small inline SVG icons
+  utils/
+    page_view_counter.js   Loads the private GoatCounter page view counter
   hooks/
     useActiveSection.js    Highlights the nav link for the section on screen
     useRevealOnScroll.js   Fades tiles in as they scroll into view
@@ -100,6 +103,7 @@ Styling uses [Tailwind CSS v3](https://v3.tailwindcss.com/). The site palette is
 | `dusty`  | `#A4B8C6` | Decoration and tile backgrounds (never as text color) |
 | `steel`  | `#536F85` | Buttons and links                          |
 | `navy`   | `#293B4A` | Headings, body text, and contrast elements |
+| `coral`  | `#E07A5F` | Accent pop: dots, lines, bars, borders, glows (never text) |
 
 Fonts: **Fraunces** for headings (`font-heading`) and **Manrope** for body text (`font-body`),
 loaded from Google Fonts in `public/index.html`.
@@ -134,3 +138,16 @@ Each tile has a `background` of `ivory`, `mist`, `dusty`, or `navy`. Inside tile
 They switch automatically so text stays readable on every background, for example light text and
 ivory buttons on the navy tile, and navy instead of steel-blue labels on mist and dusty tiles.
 The values are defined in `src/index.css`.
+
+## Page view counter (private)
+
+The site can count visits with [GoatCounter](https://www.goatcounter.com), a free, privacy-friendly
+service with no cookies (so no consent banner is needed). Counts appear only in your private
+GoatCounter dashboard; nothing is shown on the site.
+
+1. Sign up at [goatcounter.com](https://www.goatcounter.com/signup). Choose a code using only
+   letters, numbers, and hyphens (e.g. `alexapadberg` → `alexapadberg.goatcounter.com`).
+2. Put that code in `src/data/site_config.js` as `goatCounterCode`.
+3. Deploy (`npm run deploy`). Visits to the live site will appear in your dashboard.
+
+Local development (`npm start`) is never counted. Visitors using ad blockers may not be counted.

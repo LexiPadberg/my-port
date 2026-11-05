@@ -16,6 +16,7 @@ module.exports = {
         dusty: '#A4B8C6', // decorative elements (navy text is readable on it; steel is not)
         steel: '#536F85', // buttons and links
         navy: '#293B4A', // headings, body text and contrast elements
+        coral: '#E07A5F', // accent "pop": dots, lines, bars, borders, glows only (too light for text)
         tone: {
           heading: toneColor('heading'),
           body: toneColor('body'),

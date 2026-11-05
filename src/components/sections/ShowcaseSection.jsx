@@ -19,7 +19,7 @@ function ShowcaseSection({ background = 'navy', className = '', revealDelayMs = 
       {/* Soft glow in the corner of the dark tile (decorative only). */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-steel/40 blur-3xl"
+        className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-coral/30 blur-3xl"
       />
       <div className="relative">
         <SectionHeading id={headingId} eyebrow="Selected work" title="Projects & Awards" />
