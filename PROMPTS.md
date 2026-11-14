@@ -210,6 +210,13 @@ move the picture of me at the top just a little bit up so i can see the pendant 
 
 the pictures for crusdar and cummins are no longer rendering
 
+## 2026-11-14 10:11 EST
+
+my images are no longer showing in the projects and awards carosel. fix them on a seapaate branch
+
+## 2026-11-14 10:44 EST
+
+my pictures are no longer loadingfor the projects and awards sections. fix
 ## 2026-11-05 09:35 EST
 
 in my about me, add some stuff about my current job at fathom. add how I have worked on military applications from scripting tools to geospatial analysis
