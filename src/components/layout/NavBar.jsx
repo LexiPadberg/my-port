@@ -74,7 +74,7 @@ function NavBar() {
                 <NavLink
                   link={link}
                   isActive={isActive}
-                  className={`relative py-1 text-sm font-semibold after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-dusty after:transition-transform after:duration-200 ${
+                  className={`relative py-1 text-sm font-semibold after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-coral after:transition-transform after:duration-200 ${
                     isActive ? 'after:scale-x-100' : 'after:scale-x-0 hover:after:scale-x-100'
                   }`}
                 />

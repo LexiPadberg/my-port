@@ -10,7 +10,7 @@ test('fills one segment per level step', () => {
   const { container } = render(<SkillLevelIndicator level="Intermediate" />);
   const segments = container.querySelectorAll('[aria-hidden="true"] > span');
   const filledSegments = [...segments].filter((segment) =>
-    segment.className.split(' ').includes('bg-tone-accent')
+    segment.className.split(' ').includes('bg-coral')
   );
   expect(segments).toHaveLength(3);
   expect(filledSegments).toHaveLength(2);

@@ -25,7 +25,7 @@ function SkillLevelIndicator({ level }) {
           <span
             key={segmentLevel}
             className={`h-1.5 w-5 rounded-full ${
-              index < filledSegments ? 'bg-tone-accent' : 'bg-tone-accent/20'
+              index < filledSegments ? 'bg-coral' : 'bg-tone-accent/20'
             }`}
           />
         ))}

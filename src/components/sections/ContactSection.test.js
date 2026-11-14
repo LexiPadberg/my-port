@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import contactLinks from '../../data/contact_data';
 import ContactSection from './ContactSection';
 
@@ -24,6 +24,30 @@ test('email opens the mail app; social links open safely in a new tab', () => {
     expect(link).toHaveAttribute('target', '_blank');
     expect(link).toHaveAttribute('rel', 'noopener noreferrer');
   });
+});
+
+test('the Copy button copies the email address and confirms it', async () => {
+  const writeText = jest.fn().mockResolvedValue(undefined);
+  Object.assign(navigator, { clipboard: { writeText } });
+  render(<ContactSection />);
+
+  fireEvent.click(screen.getByRole('button', { name: 'Copy email address' }));
+
+  expect(writeText).toHaveBeenCalledWith('lexipadberg11@gmail.com');
+  expect(await screen.findByText('Copied')).toBeInTheDocument();
+});
+
+test('the Copy button shows an error if copying is blocked', async () => {
+  const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+  Object.assign(navigator, {
+    clipboard: { writeText: jest.fn().mockRejectedValue(new Error('blocked')) },
+  });
+  render(<ContactSection />);
+
+  fireEvent.click(screen.getByRole('button', { name: 'Copy email address' }));
+
+  expect(await screen.findByText('Copy failed')).toBeInTheDocument();
+  errorSpy.mockRestore();
 });
 
 test('no placeholder contact details remain', () => {

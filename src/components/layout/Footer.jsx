@@ -13,7 +13,9 @@ function Footer() {
         </p>
 
         <ul className="flex items-center gap-2" aria-label="Contact and social links">
-          {contactLinks.map((contactLink) => {
+          {contactLinks
+            .filter((contactLink) => contactLink.showInFooter !== false)
+            .map((contactLink) => {
             const Icon = ICONS_BY_NAME[contactLink.icon];
             if (!Icon) {
               if (process.env.NODE_ENV !== 'production') {

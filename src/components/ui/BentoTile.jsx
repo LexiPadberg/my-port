@@ -48,9 +48,9 @@ function BentoTile({
         'relative overflow-hidden rounded-3xl',
         isFlush ? '' : 'p-6 sm:p-8 lg:p-10',
         backgroundClass || BACKGROUND_CLASSES.mist,
-        // Fade-and-rise on first appearance, plus a soft shadow on hover.
+        // Fade-and-rise on first appearance; a soft resting shadow that deepens on hover.
         '[transition:opacity_700ms_ease-out,transform_700ms_ease-out,box-shadow_300ms_ease]',
-        'hover:shadow-xl hover:shadow-navy/10',
+        'shadow-lg shadow-navy/10 hover:shadow-2xl hover:shadow-navy/15',
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0',
         // People who ask their device for less motion see tiles immediately.
         'motion-reduce:!translate-y-0 motion-reduce:!opacity-100 motion-reduce:!transition-none',
