@@ -209,3 +209,11 @@ move the picture of me at the top just a little bit up so i can see the pendant 
 ## 2026-11-04 13:19 EST
 
 the pictures for crusdar and cummins are no longer rendering
+
+## 2026-11-14 10:11 EST
+
+my images are no longer showing in the projects and awards carosel. fix them on a seapaate branch
+
+## 2026-11-14 10:44 EST
+
+my pictures are no longer loadingfor the projects and awards sections. fix
